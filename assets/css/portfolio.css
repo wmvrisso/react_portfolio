@@ -1,9 +1,27 @@
 .styled-line {
-    border: none;               /* Removes the default border */
-    height: 5px;                /* Sets the line thickness */
-    background-color: rgb(150, 148, 148);    /* Sets the line color */
-    margin: 10px 0;             /* Adds space above and below the line */
-    width: 100%;                 /* Adjusts the line's width */
-    margin-left: auto;          /* Centers the line */
-    margin-right: auto;
-  }
+  border: none; /* Removes the default border */
+  height: 5px; /* Sets the line thickness */
+  background-color: rgb(150, 148, 148); /* Sets the line color */
+  margin: 10px 0; /* Adds space above and below the line */
+  width: 100%; /* Adjusts the line's width */
+  margin-left: auto; /* Centers the line */
+  margin-right: auto;
+}
+
+.hero {
+  background-image: url("/images/blu_midi_10.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100px;
+  display: flex;
+  color: white;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: 500;
+  margin: 0;
+  padding-top: 0px;
+  padding-bottom: 100px;
+}

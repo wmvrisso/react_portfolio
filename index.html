@@ -12,47 +12,33 @@
 
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: Verdana, Geneva, Tahoma, sans-serif}
-.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+header,button {font-family: "Montserrat", sans-serif}
 </style>
 
 <!-- Header -->
 <header>
-  <div class="hero">
-    <div class="w3-container w3-left-align" style="padding:80px 200px">
-        <h1>Will Vrisso</h1>
-    </div>
+  <div class="logo">Will Vrisso</div>
+  <div class="menu-toggle" id="menu-toggle">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
   </div>
-
-  <div class="hero">
-    <div class="w3-container w3-left-align" style="padding:80px 200px">
-        <h2>Online Portfolio</h2>
-    </div>
-
-  <nav class="w3-right"> <!-- Navbar -->
-    
-    <div class="hero">
-      <div style="padding-top:50px; text-align: right;">
-        <div class="w3-bar w3-card w3-right-align w3-large">
-        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-white" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-        <a href="./index.html" style="float:right" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Resume</a>
-        <a href="./index.html" style="float:right" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact</a>
-        <a href="./index.html" style="float:right" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Portfolio</a>
-        <a href="./index.html" style="float:right" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About Me</a>
-      </div>
-    </div>
-
-    <div class="w3-right-align">  <!-- Navbar on small screens -->
-      <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large"> 
-        <a href="./index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
-        <a href="./index.html" class="w3-bar-item w3-button w3-padding-large">Lesson 1</a>
-        <a href="./index.html" class="w3-bar-item w3-button w3-padding-large">Lesson 2</a>
-        <a href="./index.html" class="w3-bar-item w3-button w3-padding-large">Lesson 3</a>
-      </div>
-    </div>
+  <nav id="navbar">
+    <a href="#about">About Me</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+    <a href="#resume">Resume</a>
   </nav>
-
-
 </header>
+
+<script>
+  const toggle = document.getElementById('menu-toggle');
+  const nav = document.getElementById('navbar');
+
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+</script>
 
 <body>
   <main>
@@ -112,9 +98,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: Verdana, Geneva, Tahoma, sans-serif}
   </footer>
 
 
-  <script src="lesson2.js"></script>  
-  <script src="./assets/js/script.js"></script>
-  <script src="./assets/js/lesson2.js"></script>
+  <script src="portfolio.js"></script>  
   <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
 
 </body>

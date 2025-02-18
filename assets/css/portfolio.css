@@ -1,27 +1,70 @@
-.styled-line {
-  border: none; /* Removes the default border */
-  height: 5px; /* Sets the line thickness */
-  background-color: rgb(150, 148, 148); /* Sets the line color */
-  margin: 10px 0; /* Adds space above and below the line */
-  width: 100%; /* Adjusts the line's width */
-  margin-left: auto; /* Centers the line */
-  margin-right: auto;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
-
-.hero {
+header {
   background-image: url("/images/blu_midi_10.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  height: 100px;
+  background-color: #0d1b2a;
+  padding: 20px 40px;
+  padding-top: 100px;
   display: flex;
-  color: white;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
 }
-
-h1 {
-  font-size: 3em;
-  font-weight: 500;
-  margin: 0;
-  padding-top: 0px;
-  padding-bottom: 100px;
+.logo {
+  color: white;
+  font-size: 45px;
+  font-weight: 200;
+}
+nav {
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  right: 40px;
+  bottom: 20px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  transition: background-color 0.3s;
+}
+nav a:hover {
+  background-color: #415a77;
+  border-radius: 4px;
+}
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+.bar {
+  background-color: white;
+  height: 3px;
+  width: 25px;
+  margin: 4px 0;
+}
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: right;
+    position: static;
+    align-items: flex-end;
+  }
+  nav.active {
+    display: flex;
+  }
+  nav a {
+    padding: 12px;
+    border-top: 1px solid #415a77;
+  }
+  .menu-toggle {
+    display: flex;
+  }
 }

@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: 10px;
   font-family: Arial, sans-serif;
 }
 header {
@@ -48,7 +48,42 @@ nav a:hover {
   width: 25px;
   margin: 4px 0;
 }
+.contact-form {
+  display: contents;
+  background-color: #1b2a41;
+  padding: 20px;
+  margin: 40px;
+  border-radius: 4px;
+}
+.contact-form input {
+  display: block;
+  margin: 10px 0;
+  width: 100%;
+  padding: 10px;
+}
 
+.contact-form textarea {
+  display: block;
+  margin: 10px 0;
+  width: 100%;
+  padding: 10px;
+}
+.contact-form button {
+  display: block;
+  margin: 10px 0;
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #415a77;
+}
+.contact-form button {
+  background-color: #415a77;
+  color: white;
+  cursor: pointer;
+}
+.contact-form button:hover {
+  background-color: #778da9;
+}
 @media (max-width: 768px) {
   nav {
     display: none;
@@ -68,4 +103,17 @@ nav a:hover {
   .menu-toggle {
     display: flex;
   }
+}
+footer {
+  background-image: url("/images/blu_midi_10.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: #0d1b2a;
+  padding: 20px 40px;
+  padding-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
 }

@@ -1,4 +1,4 @@
-function Header() {
+function Portfolio() {
   return (
     <header>
       <div class="logo">Will Vrisso</div>
@@ -17,4 +17,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Portfolio;

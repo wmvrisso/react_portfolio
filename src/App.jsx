@@ -1,8 +1,19 @@
+import Header from "./components/Header";
+import AboutMe from "./components/AboutMe";
+import ContactForm from "./components/ContactForm";
+import Resume from "./components/Resume";
+import "./assets/portfolio.css";
+import "./assets/contact.css";
 
-import styles from './App.modules.css'
+const App = () => {
+  return (
+    <div>
+      <Header />
+      <AboutMe />
+      <ContactForm />
+      <Resume />
+    </div>
+  );
+};
 
-function App() {
-  return <div className={styles.App}>Hello World!</div>;
-}
-
-export default App
+export default App;
